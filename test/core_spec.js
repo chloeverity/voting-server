@@ -39,9 +39,9 @@ describe('Application logic', () => {
   describe('vote', () => {
     it('creates a tally for the voted entry', () => {
       const state = Map({
-        vote = Map({
+        vote: Map({
           pair: List.of('Trainspotting', '28 Days Later')
-        });
+        }),
         entries: List()
       });
       const nextState = vote(state, 'Trainspotting');
