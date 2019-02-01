@@ -13,4 +13,18 @@ describe('reducer', () => {
       entries: ['Trainspotting']
     }));
   });
+  it('handles NEXT', () => {
+    const initialState = fromJS({
+      entries: ['Trainspotting', '28 Days Later']
+    });
+    const action: {type: 'NEXT'};
+    const nextState: reducer(initialState, action);
+
+    expect(nextState).to.equal(fromJS({
+      vote: {
+        pair: ['Trainspotting', '28 Days Later']
+      },
+      entries: []
+    }));
+  });
 });
