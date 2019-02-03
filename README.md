@@ -1,5 +1,7 @@
 # Voting Server
 
+Note: The server side of this project can be found [here](https://github.com/chloeverity/voting-client)
+
 React/Redux tutorial by https://github.com/teropa
 
 App that organises live votes, putting options together in pairs, like bracket voting. When there's just one left, that's the winner.
